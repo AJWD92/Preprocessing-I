@@ -149,15 +149,10 @@ table {
 @secondary-color: darkgray;
 
 // this applies margin.
-@marginMain: 2% 0 2%;
+@marginMain: 2% 0 0;
 
 // this applies margin.
-@marginCont: 1% 25% 2%;
-
-// this applies margin-bottom
-.marginDown() {
-  margin-bottom: 2%;
-}
+@marginCont: 1% 25% 0;
 
 // this applies padding
 @paddingCont: 2% 4% 2%;
@@ -167,6 +162,11 @@ table {
 
 // this makes font-size = 15px;
 @font-sec: 1.5rem;
+
+// this applies margin-bottom
+.marginDown() {
+  margin-bottom: 0.5%;
+}
 
 // this open a mix-in for border radius on imgs.
 .borderImg() {
@@ -264,7 +264,7 @@ body {
   .portfolio {
     display: flex;
     flex-direction: column;
-    background: @secondary-color;
+    // background: @secondary-color;
     width: 80%;
     padding: @paddingCont;
     h2 {
@@ -287,3 +287,35 @@ body {
     } // this closes p styling.
   } //this closes the .portfolio div styling
 } //this closes the Exp section styling
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  //   background: @secondary-color;
+  margin: 2% 0 2%;
+  padding: @paddingCont;
+  width: 80%;
+  h2 {
+    font-family: @prime-fontFam;
+    font-size: @font-prime;
+    // flex-direction: column;
+    width: 70%;
+    margin: @marginCont;
+    .marginDown();
+  }
+  div {
+    background: @secondary-color;
+    display: flex;
+    width: 80%;
+    font-family: @sec-fontFam;
+    font-size: @font-sec;
+    margin: 1% 0 1%;
+    padding: @paddingCont;
+    p {
+      line-height: 1.5;
+    }
+    i {
+      width: 100%;
+    }
+  } // this closes the div styling
+} // this closes skills div styling

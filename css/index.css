@@ -157,7 +157,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: gray;
-  margin: 2% 0 2%;
+  margin: 2% 0 0;
 }
 .topNav {
   display: flex;
@@ -167,7 +167,7 @@ body {
 }
 #home {
   display: flex;
-  margin: 1% 25% 2%;
+  margin: 1% 25% 0;
 }
 #home header {
   background: lightgray;
@@ -178,11 +178,11 @@ body {
 }
 #home header h1 {
   font-family: 'Raleway', sans-serif;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
 }
 #home header h2 {
   font-family: 'Press Start 2P', cursive;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
 }
 #home header img {
   width: 45%;
@@ -192,13 +192,13 @@ body {
 #about {
   background: darkgray;
   color: black;
-  margin: 1% 25% 2%;
+  margin: 1% 25% 0;
   padding: 2% 4% 2%;
 }
 #about h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
 }
 #about p {
   font-family: 'Press Start 2P', cursive;
@@ -208,21 +208,20 @@ body {
 #Exp {
   background: lightgray;
   color: black;
-  margin: 1% 25% 2%;
+  margin: 1% 25% 0;
   padding: 2% 4% 2%;
 }
 #Exp .portfolio {
   display: flex;
   flex-direction: column;
-  background: darkgray;
   width: 80%;
   padding: 2% 4% 2%;
 }
 #Exp .portfolio h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
-  margin: 1% 25% 2%;
-  margin-bottom: 2%;
+  margin: 1% 25% 0;
+  margin-bottom: 0.5%;
 }
 #Exp .portfolio p {
   font-family: 'Press Start 2P', cursive;
@@ -235,4 +234,33 @@ body {
 }
 #Exp .portfolio p a:hover {
   color: white;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0 2%;
+  padding: 2% 4% 2%;
+  width: 80%;
+}
+.skills h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  width: 70%;
+  margin: 1% 25% 0;
+  margin-bottom: 0.5%;
+}
+.skills div {
+  background: darkgray;
+  display: flex;
+  width: 80%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin: 1% 0 1%;
+  padding: 2% 4% 2%;
+}
+.skills div p {
+  line-height: 1.5;
+}
+.skills div i {
+  width: 100%;
 }
