@@ -154,8 +154,8 @@ body {
   height: 100%;
 }
 .wrapper {
-  width: 90%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   background-color: gray;
   margin: 2% 0 2%;
 }
@@ -204,4 +204,35 @@ body {
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+#Exp {
+  background: lightgray;
+  color: black;
+  margin: 1% 25% 2%;
+  padding: 2% 4% 2%;
+}
+#Exp .portfolio {
+  display: flex;
+  flex-direction: column;
+  background: darkgray;
+  width: 80%;
+  padding: 2% 4% 2%;
+}
+#Exp .portfolio h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 1% 25% 2%;
+  margin-bottom: 2%;
+}
+#Exp .portfolio p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+#Exp .portfolio p a {
+  text-decoration: none;
+  color: gold;
+}
+#Exp .portfolio p a:hover {
+  color: white;
 }
