@@ -167,39 +167,41 @@ body {
 }
 #home {
   display: flex;
-  margin: 1% 25% 1%;
+  margin: 1% 25% 2%;
 }
 #home header {
   background: lightgray;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   font-size: 3rem;
   color: black;
+  padding: 2% 4% 2%;
 }
 #home header h1 {
-  margin: 1% 25% 1%;
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 2%;
 }
 #home header h2 {
   font-family: 'Press Start 2P', cursive;
+  margin-bottom: 2%;
 }
 #home header img {
   width: 45%;
-  margin: 1% 25% 1%;
   border: 2px solid black;
   border-radius: 50%;
 }
 #about {
   background: darkgray;
   color: black;
-  margin: 1% 25% 1%;
+  margin: 1% 25% 2%;
+  padding: 2% 4% 2%;
 }
 #about h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
-  margin: 2% 0 2%;
+  margin-bottom: 2%;
 }
 #about p {
   font-family: 'Press Start 2P', cursive;
-  word-spacing: 2;
+  line-height: 1.5;
   font-size: 1.5rem;
 }

@@ -129,33 +129,55 @@ table {
   border-spacing: 0;
 }
 // start of less css code
+
+// this imports selected fonts from google fonts.
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway:700i&display=swap');
 
+// this makes font-family = Raleway.
 @prime-fontFam: 'Raleway', sans-serif;
 
+// this makes font-family = Press Start 2P.
 @sec-fontFam: 'Press Start 2P', cursive;
 
+// this makes font-color = black.
 @font-color: black;
 
+// this makes color = lightgray.
 @primary-color: lightgray;
 
+// this makes color = darkgray.
 @secondary-color: darkgray;
 
+// this applies margin.
 @marginMain: 2% 0 2%;
 
-@marginCont: 1% 25% 1%;
+// this applies margin.
+@marginCont: 1% 25% 2%;
 
+// this applies margin-bottom
+.marginDown() {
+  margin-bottom: 2%;
+}
+
+// this applies padding
+@paddingCont: 2% 4% 2%;
+
+// this makes font-size = 30px;
 @font-prime: 3rem;
 
+// this makes font-size = 15px;
 @font-sec: 1.5rem;
 
+// this open a mix-in for border radius on imgs.
 .borderImg() {
   border: 2px solid black;
   border-radius: 50%;
-}
+} // this closes the mix-in for .borderImg.
+
+// this opens a mix-in to create borders for divs.
 .border() {
-  border-bottom: 2px solid black;
-}
+  border-bottom: 3px solid black;
+} // this closes the mix-in for .border.
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -165,6 +187,7 @@ table {
 }
 
 html {
+  // this makes font-size = 10px;
   font-size: 62.5%;
 }
 
@@ -172,60 +195,62 @@ html,
 body {
   height: 100%;
 }
+// this opens the wrapper styling.
 .wrapper {
   width: 90%;
   height: 95%;
   background-color: gray;
   margin: @marginMain;
-}
+} //this closes the wrapper styling.
 
+// this opens the topNav styling.
 .topNav {
   display: flex;
   width: 100%;
   height: 5%;
   justify-content: space-evenly;
-}
+} //this closes the topNav styling.
 
-// this opens the home section styling
+// this opens the home section styling.
 #home {
   display: flex;
   margin: @marginCont;
-  // this opens the header styling
+  // this opens the header styling.
   header {
     background: @primary-color;
     .border();
     font-size: 3rem;
     color: @font-color;
+    padding: @paddingCont;
     h1 {
-      margin: @marginCont;
       font-family: @prime-fontFam;
-    } // this closes the h1 styling
+      .marginDown();
+    } // this closes the h1 styling.
     h2 {
       font-family: @sec-fontFam;
-    } // this closes the h2 styling
+      .marginDown();
+    } // this closes the h2 styling.
     img {
       width: 45%;
-      margin: @marginCont;
       .borderImg();
-    } //this closes the img styling
-  } // this closes the header styling
-} // this closes the home section styling
+    } //this closes the img styling.
+  } // this closes the header styling.
+} // this closes the home section styling.
 
-// this opens the about section styling
+// this opens the about section styling.
 #about {
   background: @secondary-color;
-  //   width: 60%;
-  //   height: 55%;
   color: @font-color;
   margin: @marginCont;
+  padding: @paddingCont;
   h2 {
     font-family: @prime-fontFam;
     font-size: @font-prime;
-    margin: @marginMain;
-  } // this closes the h2 styling
+    .marginDown();
+  } // this closes the h2 styling.
   p {
     font-family: @sec-fontFam;
-    word-spacing: 2;
+    line-height: 1.5;
     font-size: @font-sec;
-  } // this closes the p styling
-} //this closes the about section styling
+  } // this closes the p styling.
+} //this closes the about section styling.
