@@ -126,11 +126,80 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v8/e3t4euO8T-267oIAQAu6jDQyK3nVivY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCe.ttf) format('truetype');
+}
 /* Set every element's box-sizing to border-box */
 * {
+  max-width: 100%;
+  max-height: 100%;
   box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
 }
 html,
 body {
   height: 100%;
+}
+.wrapper {
+  width: 90%;
+  height: 95%;
+  background-color: gray;
+  margin: 2% 0 2%;
+}
+.topNav {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  justify-content: space-evenly;
+}
+#home {
+  display: flex;
+  margin: 1% 25% 1%;
+}
+#home header {
+  background: lightgray;
+  border-bottom: 2px solid black;
+  font-size: 3rem;
+  color: black;
+}
+#home header h1 {
+  margin: 1% 25% 1%;
+  font-family: 'Raleway', sans-serif;
+}
+#home header h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+#home header img {
+  width: 45%;
+  margin: 1% 25% 1%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+#about {
+  background: darkgray;
+  color: black;
+  margin: 1% 25% 1%;
+}
+#about h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 2% 0 2%;
+}
+#about p {
+  font-family: 'Press Start 2P', cursive;
+  word-spacing: 2;
+  font-size: 1.5rem;
 }
