@@ -151,7 +151,8 @@ html {
 }
 html,
 body {
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .wrapper {
   width: 100%;
@@ -167,11 +168,12 @@ body {
 }
 #home {
   display: flex;
-  margin: 1% 25% 0;
+  margin: 0 25% 0;
+  width: 50%;
+  border-bottom: 3px solid black;
 }
 #home header {
   background: lightgray;
-  border-bottom: 3px solid black;
   font-size: 3rem;
   color: black;
   padding: 2% 4% 2%;
@@ -185,15 +187,17 @@ body {
   margin-bottom: 0.5%;
 }
 #home header img {
-  width: 45%;
+  width: 35%;
   border: 2px solid black;
   border-radius: 50%;
 }
 #about {
   background: darkgray;
   color: black;
-  margin: 1% 25% 0;
+  margin: 0 25% 0;
   padding: 2% 4% 2%;
+  width: 50%;
+  border-bottom: 3px solid black;
 }
 #about h2 {
   font-family: 'Raleway', sans-serif;
@@ -208,19 +212,22 @@ body {
 #Exp {
   background: lightgray;
   color: black;
-  margin: 1% 25% 0;
+  margin: 0 25% 0;
   padding: 2% 4% 2%;
+  width: 50%;
+  border-bottom: 3px solid black;
 }
 #Exp .portfolio {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   padding: 2% 4% 2%;
+  border-bottom: 3px solid black;
 }
 #Exp .portfolio h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
-  margin: 1% 25% 0;
+  margin: 0 25% 0;
   margin-bottom: 0.5%;
 }
 #Exp .portfolio p {
@@ -230,7 +237,7 @@ body {
 }
 #Exp .portfolio p a {
   text-decoration: none;
-  color: gold;
+  color: #000080;
 }
 #Exp .portfolio p a:hover {
   color: white;
@@ -238,21 +245,22 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
+  background: darkgray;
   margin: 2% 0 2%;
   padding: 2% 4% 2%;
-  width: 80%;
+  width: 100%;
 }
 .skills h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
   width: 70%;
-  margin: 1% 25% 0;
+  margin: 0 25% 0;
   margin-bottom: 0.5%;
 }
 .skills div {
-  background: darkgray;
+  background: lightgray;
   display: flex;
-  width: 80%;
+  width: 90%;
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
   margin: 1% 0 1%;
@@ -263,4 +271,42 @@ body {
 }
 .skills div i {
   width: 100%;
+}
+.exp {
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 10% 4%;
+  width: 80%;
+}
+.exp div {
+  background: lightgray;
+  width: 80%;
+  padding: 2% 4% 2%;
+}
+.exp div h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 0 0 2%;
+}
+.exp div h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0 0 2%;
+}
+.exp div p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#contact h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 0 25% 0;
 }
