@@ -1,1 +1,381 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v8/e3t4euO8T-267oIAQAu6jDQyK3nVivY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCe.ttf) format('truetype');
+}
+/* Set every element's box-sizing to border-box */
+* {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  margin: 2% 0 0;
+}
+.topNav {
+  display: flex;
+  width: 100%;
+  height: 5%;
+}
+.topNav nav {
+  display: flex;
+  width: 90%;
+  font-size: 3rem;
+  margin: 0 25% 0;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .topNav nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.topNav nav a {
+  text-decoration: none;
+}
+#home {
+  display: flex;
+  margin: 0 25% 0;
+  width: 50%;
+  border-bottom: 3px solid black;
+}
+@media (max-width: 500px) {
+  #home {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+#home header {
+  background: lightgray;
+  font-size: 3rem;
+  color: black;
+  padding: 2% 4% 2%;
+}
+#home header h1 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 0.5%;
+}
+#home header h2 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 0.5%;
+}
+#home header img {
+  width: 35%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+#about {
+  background: darkgray;
+  color: black;
+  margin: 0 25% 0;
+  padding: 2% 4% 2%;
+  width: 50%;
+  border-bottom: 3px solid black;
+}
+@media (max-width: 500px) {
+  #about {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+#about h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.5%;
+}
+#about p {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+#Exp {
+  background: lightgray;
+  color: black;
+  margin: 0 25% 0;
+  padding: 2% 4% 2%;
+  width: 50%;
+  border-bottom: 3px solid black;
+}
+@media (max-width: 500px) {
+  #Exp {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+#Exp .portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2% 4% 2%;
+  border-bottom: 3px solid black;
+}
+#Exp .portfolio h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 0 25% 0;
+  margin-bottom: 0.5%;
+}
+#Exp .portfolio p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+#Exp .portfolio p a {
+  text-decoration: none;
+  color: #000080;
+}
+#Exp .portfolio p a:hover {
+  color: white;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  background: darkgray;
+  margin: 2% 0 2%;
+  padding: 2% 4% 2%;
+  width: 100%;
+}
+.skills h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  width: 70%;
+  margin: 0 25% 0;
+  margin-bottom: 0.5%;
+}
+.skills div {
+  background: lightgray;
+  display: flex;
+  width: 90%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin: 1% 0 1%;
+  padding: 2% 4% 2%;
+}
+.skills div p {
+  line-height: 1.5;
+}
+.skills div i {
+  font-size: 5rem;
+  margin-right: 4%;
+}
+.exp {
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 10% 4%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .exp {
+    width: 100%;
+    display: flex;
+  }
+}
+.exp div {
+  background: lightgray;
+  width: 80%;
+  padding: 2% 4% 2%;
+}
+@media (max-width: 500px) {
+  .exp div {
+    width: 100%;
+  }
+}
+.exp div h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 0 0 2%;
+}
+.exp div h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0 0 2%;
+}
+.exp div p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 2;
+}
+#contact h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin: 0 25% 0;
+}
+#contact address {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 25% 0;
+}
+#contact a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 25% 0;
+}
+#contact a:hover {
+  color: black;
+}
+#contact i {
+  margin: 0 25% 0;
+  font-size: 3rem;
+}
