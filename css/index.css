@@ -164,13 +164,39 @@ body {
   display: flex;
   width: 100%;
   height: 5%;
+}
+.topNav nav {
+  display: flex;
+  width: 90%;
+  font-size: 3rem;
+  margin: 0 25% 0;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .topNav nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.topNav nav a {
+  text-decoration: none;
 }
 #home {
   display: flex;
   margin: 0 25% 0;
   width: 50%;
   border-bottom: 3px solid black;
+}
+@media (max-width: 500px) {
+  #home {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 #home header {
   background: lightgray;
@@ -199,6 +225,12 @@ body {
   width: 50%;
   border-bottom: 3px solid black;
 }
+@media (max-width: 500px) {
+  #about {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 #about h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
@@ -216,6 +248,12 @@ body {
   padding: 2% 4% 2%;
   width: 50%;
   border-bottom: 3px solid black;
+}
+@media (max-width: 500px) {
+  #Exp {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 #Exp .portfolio {
   display: flex;
@@ -270,19 +308,31 @@ body {
   line-height: 1.5;
 }
 .skills div i {
-  width: 100%;
+  font-size: 5rem;
+  margin-right: 4%;
 }
 .exp {
   background: darkgray;
   display: flex;
   flex-direction: column;
   padding: 2% 10% 4%;
-  width: 80%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .exp {
+    width: 100%;
+    display: flex;
+  }
 }
 .exp div {
   background: lightgray;
   width: 80%;
   padding: 2% 4% 2%;
+}
+@media (max-width: 500px) {
+  .exp div {
+    width: 100%;
+  }
 }
 .exp div h2 {
   font-family: 'Raleway', sans-serif;
@@ -304,9 +354,28 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  line-height: 2;
 }
 #contact h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
   margin: 0 25% 0;
+}
+#contact address {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 25% 0;
+}
+#contact a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 25% 0;
+}
+#contact a:hover {
+  color: black;
+}
+#contact i {
+  margin: 0 25% 0;
+  font-size: 3rem;
 }
